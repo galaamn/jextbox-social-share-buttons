@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+<name>Content - JExtBOX Social Share Buttons</name>
+<author>Galaa</author>
+<creationDate>2011-11-22</creationDate>
+<copyright>Copyright (C) 2011-2017 Galaa</copyright>
+<license>GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</license>
+<authorEmail>contact@galaa.mn</authorEmail>
+<authorUrl>www.galaa.mn</authorUrl>
+<version>3.4.0</version>
+<description>JExtBOX Social Share Buttons is a plugin that adds social network buttons including Biznetwork.mn (http://biznetwork.mn/) on your articles. Copyright (C) 2011 Galaa (www.galaa.mn). All rights reserved. Published by JExtBOX - BOX of Joomla Extensions (www.jextbox.com)</description>
+<files>
+	<filename plugin="jextboxsocialsharebuttons">jextboxsocialsharebuttons.php</filename>
+	<folder>images</folder>
+	<filename>index.html</filename>
+</files>
+<updateservers>
+	<server type="extension" priority="1" name="JExtBOX Social Share Buttons - Updates">http://jextbox.com/update/jextboxsocialsharebuttons.xml</server>
+</updateservers>
+<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="categories" type="category" extension="com_content" multiple="true" default="" label="Categories" description="Select categories." />
+			<field name="categories_option" type="list" default="exclude" label="Selected categories" description="Include or exclude" >
+				<option value="exclude">Exclude</option>
+				<option value="include">Include</option>
+  			</field>
+			<field name="articles" type="text" default="" label="Articles" description="List with excluded or included articles IDs divided by comma." />
+			<field name="articles_option" type="list" default="exclude" label="Selected articles" description="Include or exclude" >
+  				<option value="exclude">Exclude</option>
+  				<option value="include">Include</option>
+  			</field>
+			<field name="show_in_full_view" type="list" default="yes" label="Show in Full View" description="" >
+  				<option value="yes">Yes</option>
+  				<option value="no">No</option>
+  			</field>
+			<field name="show_in_featured_view" type="list" default="no" label="Show in Featured View" description="" >
+  				<option value="yes">Yes</option>
+  				<option value="no">No</option>
+  			</field>
+			<field name="show_in_category_view" type="list" default="no" label="Show in Category View" description="" >
+  				<option value="yes">Yes</option>
+  				<option value="no">No</option>
+  			</field>
+			<field name="position" type="list" default="0" label="Position" description="Choose the positions of the buttons into your article." >
+				<option value="0">Top</option>
+				<option value="1">Bottom</option>
+				<option value="2">Both</option>
+			</field>
+			<field name="main_style" type="text" default="position:relative; top:-3px;" label="CSS style of main div" description="" />
+			<field name="show_title" type="list" default="1" label="Show title" description="Shows or hides the title which is located on the buttons." >
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="title" type="text" default="Share this post" label="Title" description="" />
+			<field name="title_style" type="text" default="font-weight:bold; color:#999;" label="CSS style of title" description="" />
+			<field name="displayBiznetworkMN" type="list" default="1" label="Biznetwork.mn" description="" >
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field name="displayFacebook" type="list" default="1" label="Facebook" description="" >
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field name="displayTwitter" type="list" default="1" label="Twitter" description="" >
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field name="displayGooglePlus" type="list" default="1" label="Google Plus" description="" >
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field name="button_style" type="text" default="border:none; position:relative; top:-7px;" label="CSS for image buttons" description="" />
+			<field name="social_tags" type="list" default="1" label="Metatags for Facebook and Twitter" description="" >
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			</field>
+			<field name="social_tag_image" type="text" default="plugins/content/jextboxsocialsharebuttons/images/state_emblem_of_mongolia.png" label="Social Metatag: Image (default)" description="" />
+			<field name="social_tag_description" type="list" default="from_metadesc" label="Social Metatag: Description" description="Where is description from, when metadescription of article is empty" >
+				<option value="from_metadesc">Meta description of site</option>
+				<option value="from_article">Intro text of article</option>
+			</field>
+		</fieldset>
+	</fields>
+</config>
+</extension>
